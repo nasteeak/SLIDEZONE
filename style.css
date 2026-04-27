@@ -242,7 +242,7 @@ body {
   animation: fadeInUp 1s ease 0.4s backwards;
   text-decoration: none;
   display: inline-block;
-  margin-bottom: 100px;
+  margin-bottom: 110px;
 }
 
 .btn-hero:hover { transform: translateY(-5px) scale(1.05); box-shadow: 0 15px 40px rgba(168, 85, 247, 0.6); }
@@ -577,8 +577,8 @@ footer { background: linear-gradient(135deg, #0a0a0f 0%, #111 100%); padding: 30
   .car-title {font-size: 1.4rem;}
   .car-specs {padding: 15px; gap: 10px;}
   .spec-item {font-size: 0.85rem;}
-  .hero-title { font-size: 3rem; letter-spacing: 2px;}
-  .hero-subtitle {font-size: 1.1rem;}
+  .hero-title { font-size: 2.4rem; letter-spacing: 2px;}
+  .hero-subtitle {font-size: 1rem; max-width: 500px; margin: 0 auto;}
   .nav-bottom-list { gap: 25px; }
   .section {padding: 80px 0;}
   .section-title { font-size: 2rem; }
@@ -588,7 +588,7 @@ footer { background: linear-gradient(135deg, #0a0a0f 0%, #111 100%); padding: 30
   .scroll-strip-container { padding: 0 40px; }
   .scroll-item { min-width: 300px; padding: 20px 30px; }
   body { padding-top: 120px; }
-  .hero {min-height: 90vh;}
+  .hero {min-height: 70vh; padding: 60px 20px;}
 }
 
 /* Мобильные */
@@ -596,9 +596,10 @@ footer { background: linear-gradient(135deg, #0a0a0f 0%, #111 100%); padding: 30
   .car-specs {grid-template-columns: 1fr; padding: 15px; gap: 10px;}
   .spec-item {font-size: 0.9rem; justify-content: center;}
   .car-body {padding: 25px 20px;}
-  .hero {min-height: 85vh;}
-  .hero-title { font-size: 2rem; letter-spacing: 1px;}
+  .hero {min-height: 55vh; padding: 40px 15px;}
+  .hero-title { font-size: 1.9rem; letter-spacing: 1px;}
   .hero-subtitle {font-size: 1rem; padding: 0 10px;}
+  .hero-content {transform: none;}
   .btn-hero {padding: 14px 28px; font-size: 0.9rem; margin-bottom: 60px;}
   .section {padding: 60px 0;}
   .section-title {font-size: 1.6rem; margin-bottom: 40px;}
@@ -621,15 +622,47 @@ footer { background: linear-gradient(135deg, #0a0a0f 0%, #111 100%); padding: 30
   .navbar-brand small { font-size: 0.65rem; }
   .nav-bottom-list {flex-wrap: wrap; gap: 12px; }
   .nav-bottom-link { font-size: 0.75rem; }
-  body { padding-top: 100px; }
+  
+  body { padding-top: 70px; }
   .navbar-top {flex-direction: column; gap: 10px; text-align: center;}
   .nav-phone {font-size: 1rem;}
   .socials {justify-content: center;}
+  .offer-card,
+  .car-card,
+  .pilot-card {
+    border-radius: 12px;
+  }
+  .offer-body,
+  .car-body {
+    padding: 15px;
+  }
+  .footer-content {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    text-align: center;
+  }
+  .footer-section {
+    font-size: 0.8rem;
+  }
+  .footer-logo {
+    height: 70px;
+  }
+  .offers-section .row,
+.pilots-section .row,
+.cars-section .row {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
 }
 
 /* Маленькие экраны */
 @media (max-width: 480px) {
   body {padding-top: 90px;}
+  .hero {min-height: 45vh;}
+  .hero-title {
+    font-size: 1.5rem;
+  }
   .car-title {font-size: 1.2rem;}
   .car-badge {font-size: 0.75rem; padding: 6px 15px; top: 15px; right: 15px;}
   .car-specs {padding: 12px;}
@@ -641,4 +674,9 @@ footer { background: linear-gradient(135deg, #0a0a0f 0%, #111 100%); padding: 30
   .section-title {font-size: 1.4rem;}
   .offer-image, .car-image {height: 160px;}
   .gallery-item {height: 200px;}
+  .offers-section .row,
+  .pilots-section .row,
+  .cars-section .row {
+    grid-template-columns: 1fr; /* fallback */
+  }
 }
