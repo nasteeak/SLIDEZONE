@@ -635,8 +635,8 @@ footer { background: linear-gradient(135deg, #0a0a0f 0%, #111 100%); padding: 15
   .navbar-top-section { padding: 6px 5px;}
   .navbar-brand { font-size: 1.3rem;}
   .hero { max-height: 200px; }
-  .hero-content { padding: 40px 20px; }
-  .hero-title { font-size: 2.5rem;}
+  .hero-content { padding: 60px 20px; }
+  .hero-title { font-size: 2.3rem; margin-top: 80px;}
   .hero-subtitle { font-size: 1rem;}
   .btn-hero {padding: 13px 40px;
     font-size: 0.9rem;}
@@ -685,9 +685,9 @@ footer { background: linear-gradient(135deg, #0a0a0f 0%, #111 100%); padding: 15
     height: 30px;}
     .navbar-brand small { font-size: 0.8rem}
   .navbar-brand { font-size: 1rem;}
-  .hero { max-height: 100px; margin-top: -60px;}
+  .hero { max-height: 100px; margin-top: -40px;}
   .hero-content { padding: 20px 10px; }
-  .hero-title { font-size: 1.8rem;}
+  .hero-title { font-size: 1.8rem; margin-top: 60px;}
   .hero-subtitle { font-size: 1rem;}
   .btn-hero {padding: 11px 30px;
     font-size: 0.8rem;}
